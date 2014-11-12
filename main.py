@@ -39,7 +39,7 @@ for i in imagelist:
         ylimit = xlimit*imNew.size[1]/imNew.size[0]
         # print("ylim:" + str(ylimit))
     c.drawImage("compressed/"+str(i), 0, (29.7-ylimit)*cm, xlimit*cm, ylimit*cm)
-    c.showPage()
+    c.showPage()	# new page
     imNew.close()
 
 c.save()
